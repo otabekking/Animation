@@ -1,0 +1,59 @@
+div {
+  color: red;
+  background-color: white;
+}
+.car {
+  font-size: 120px;
+  color: black;
+  background-size: 300px;
+}
+@keyframes flows {
+  0% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.flower {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  animation: flows 3s linear infinite;
+}
+.flower .flower__item {
+  background-color: royalblue;
+  width: 150px;
+  height: 150px;
+  border-radius: 0px 100px 0px 100px;
+  margin-left: 30px;
+  animation: cloumn 2s linear infinite;
+}
+.flower .flower__item1 {
+  height: 300px;
+  width: 20px;
+  background-color: slategray;
+  margin-top: 250px;
+}
+.flower .flower__items {
+  background-color: royalblue;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px 0px 100px 0px;
+  margin-right: 30px;
+}
+section {
+  padding: 50px 0;
+}
+@keyframes column {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
